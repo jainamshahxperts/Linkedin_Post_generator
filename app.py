@@ -55,7 +55,7 @@ def generate_formal_text(params):
     **Follow these rules strictly:**  
     - Only output the post text.  
     - No "Here’s your post", no headings, no disclaimers.  
-    - No explanations, reasoning, or notes.  
+    - No, reasoning, or notes.  
     - If you add anything extra, I will ask you to rewrite it.  
 
     Post:"""  
