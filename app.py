@@ -140,6 +140,9 @@ if st.button("Generate LinkedIn Post"):
     if not prompt.strip():
         st.warning("Please enter a prompt before generating.")
     else:
+        with st.spinner("Extracting parameters..."):
+            st.session_state.params = extract_params(prompt)
+            st.write("🧾 **Extracted Parameters**", st.session_state.params)
 
         with st.spinner("Generating formal LinkedIn post..."):
             st.session_state.ai_text = generate_formal_text(st.session_state.params)
